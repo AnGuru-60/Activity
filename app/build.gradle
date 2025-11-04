@@ -2,15 +2,16 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id("io.gitlab.arturbosch.detekt")
+    id("kotlin-parcelize")
 }
 
 android {
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "otus.gpb.homework.activities"
         minSdk 23
-        targetSdk 34
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
@@ -54,10 +55,12 @@ tasks.named("detekt").configure {
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.activity:activity-ktx:1.9.0'
     implementation 'androidx.fragment:fragment-ktx:1.7.1'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.14.0-alpha05'
+    implementation 'androidx.activity:activity:1.11.0'
 }

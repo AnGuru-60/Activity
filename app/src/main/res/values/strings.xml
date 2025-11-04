@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Activities</string>
     <string name="title_send">Отправить</string>
+    <string name="alert_dialog_title">Выбор действия</string>
+    <string name="alert_dialog_create_foto">Сделать фото</string>
+    <string name="alert_dialog_choose_foto">Выбрать фото</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_canceled">Назад</string>
+    <string name="repeat_alert_dialog_title">Повторный запрос разрешения</string>
+    <string name="repeat_alert_dialog_get_access">Дать доступ</string>
+    <string name="repeat_alert_dialog_canceled">Отмена</string>
+    <string name="open_settings_dialog_title">Переход к настройкам</string>
+    <string name="open_settings_dialog_button">Открыть настройки</string>
 </resources>

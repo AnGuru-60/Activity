@@ -23,7 +23,7 @@ class FillFormActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button)?.setOnClickListener {
             val firstName = findViewById<EditText>(R.id.editFirstName).text.toString()
             val lastName = findViewById<EditText>(R.id.editLastName).text.toString()
-            val age = findViewById<EditText>(R.id.editAge).text.toString().toInt()
+            val age = findViewById<EditText>(R.id.editAge).text.toString().toIntOrNull() ?: 0
 
             if (firstName.isNotBlank() && lastName.isNotBlank() && age > 0) {
                 val user = UserInfo(firstName, lastName, age)

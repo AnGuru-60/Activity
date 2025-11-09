@@ -184,6 +184,7 @@ class EditProfileActivity : AppCompatActivity() {
     private fun populateImage(uri: Uri) {
         val bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(uri))
         imageView.setImageBitmap(bitmap)
+        imageView.tag = uri
     }
 
     private fun openSenderApp() {
